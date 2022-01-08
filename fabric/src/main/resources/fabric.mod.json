@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "modkeys",
+  "version": "${version}",
+  "name": "Modifier Keys",
+  "description": "Library for server-side access to modifier keys.",
+  "authors": [
+    "Grondag"
+  ],
+  "contact": {
+    "homepage": "https://github.com/vram-guild/modkeys",
+    "issues": "https://github.com/vram-guild/modkeys/issues"
+  },
+  "entrypoints": {
+    "main": [ "io.vram.modkeys.ModKeysFabric" ],
+    "client": [ "io.vram.modkeys.ModKeysFabricClient" ]
+  },
+   "mixins": [
+	  {
+	      "config": "modkeys.common.json",
+	      "environment": "*"
+	  }
+  ],
+  "license": "LGPL-3.0",
+  "icon": "assets/modkeys/modkeys_icon.png",
+  "environment": "*",
+  "depends": {
+    "fabricloader": ">=0.12.11",
+    "minecraft": "1.18.1",
+    "java": ">=17"
+  }
+}
