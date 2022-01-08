@@ -32,8 +32,8 @@ import io.vram.modkeys.impl.client.ModKeysClient;
 @OnlyIn(Dist.CLIENT)
 @Mod.EventBusSubscriber(modid = ModKeys.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ModKeysForgeClient {
-    @SubscribeEvent
-    public static void clientSetup(FMLClientSetupEvent event) {
-        ModKeysClient.intialize();
-    }
+	@SubscribeEvent
+	public static void clientSetup(FMLClientSetupEvent event) {
+		ModKeysClient.intialize();
+	}
 }
