@@ -11,7 +11,7 @@ sourceSets {
 			exclude '*.DS_Store'
 		}
 		resources {
-			rcDirs = ['../common/src/main/resources', 'src/main/resources']
+			srcDirs = ['../common/src/main/resources', 'src/main/resources']
 			include '**/*'
 			exclude '*.DS_Store'
 		}
